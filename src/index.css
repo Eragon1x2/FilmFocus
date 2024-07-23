@@ -1,0 +1,44 @@
+/* Comprehensive CSS Reset */
+/* Eric Meyer's CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes padding and border in element's total width and height */
+}
+
+body {
+  font-family: "Roboto", sans-serif;/* Example font stack */
+  line-height: 1.5;
+}
+
+/* Normalize.css */
+/* Include Normalize.css via CDN or download it */
+/* Example link for CDN */
+/*
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+*/
+
+/* Minimal Custom Reset */
+/* Reset margins and paddings */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Additional resets as needed */
+
+/* Your custom styles start here */
+body {
+  background: -webkit-linear-gradient(90deg, #0b0d0f,#1a1d21,#292e36);
+  background: linear-gradient(90deg, #0b0d0f,#1a1d21,#292e36);
+}
+:root {
+  background: -webkit-linear-gradient(90deg, #0b0d0f,#1a1d21,#292e36);
+  background: linear-gradient(90deg, #0b0d0f,#1a1d21,#292e36);
+  background-color: #292e36;
+}
