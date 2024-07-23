@@ -4,7 +4,7 @@ import { Dropdown } from "react-bootstrap"
 import genre from "../types/movie"
 import List from "../components/List"
 import FavoriteItemsContext from "../store"
-
+import movie from '../types/movie';
 
 function FilmsPage() {
     const [genresss, setGenres] = useState<genre[] | []>([])
@@ -25,7 +25,7 @@ function FilmsPage() {
       .then(data => setFilms(data.results))
     }
     },[genre])
-    function addItemToFavorite(item) {
+    function addItemToFavorite(item: movie) {
       context.addItem(item)
     }
     return (

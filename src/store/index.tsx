@@ -6,9 +6,13 @@ type favoriteItem = {
 }
 type faviriteItemContextTypes = {
   items: movie[],
+  addItem: (item: movie) => void,
+  deleteItem:(item: movie) => void,
 }
 const FavoriteItemsContext = createContext<faviriteItemContextTypes>({
   items: [],
+  addItem: () => {},
+  deleteItem: () => {},
 
 });
 export function FavoriteItemsContextProvider({ children}: favoriteItem) {
