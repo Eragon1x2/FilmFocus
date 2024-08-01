@@ -27,8 +27,9 @@ function List(props: Props) {
          <Card.Body className='movie-item-body'>
           <p className='movie-rating'>{Math.floor(item.vote_average*10)}%</p>
            <Card.Title>{item.original_title}</Card.Title>
-           <Card.Text>
-            {item.overview.slice(0, 200)} ...
+           <Card.Text className='movie-item-text'>
+            {/* {item.overview.slice(0, 200)} ... */}
+            {item.overview}
            </Card.Text>
          </Card.Body>
          <Card.Footer>         <Button variant="primary" onClick={(event) => handleButtonClick(event,item)}>{what === true ? 'Delete from Watch Later' : 'Add to Watch Later' }</Button></Card.Footer>
