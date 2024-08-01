@@ -8,7 +8,7 @@ export default interface movie {
     vote_average: string | number | any | unknown,
     original_title: string,
     overview: string,
-    id: number,
+    id: any,
     homepage?: string,
     genres?: genre[] 
 }
