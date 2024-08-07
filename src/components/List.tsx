@@ -32,7 +32,7 @@ function List(props: Props) {
             {item.overview}
            </Card.Text>
          </Card.Body>
-         <Card.Footer>         <Button variant="primary" onClick={(event) => handleButtonClick(event,item)}>{what === true ? 'Delete from Watch Later' : 'Add to Watch Later' }</Button></Card.Footer>
+         <Card.Footer>         <Button variant="primary" onClick={(event) => handleButtonClick(event,item)}>{what === true ? 'Delete from Favorite Movies' : 'Add to Favorite Movies' }</Button></Card.Footer>
        </Card>
       ))}
      </div>

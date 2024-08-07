@@ -40,7 +40,7 @@ function FindMovie() {
                         <li id={item.id}>{item.name}</li>
                     ))}
                 </ul>
-                <Button onClick={() => handleAddtoWAtchLater(data)}>Add to Watch Later</Button>
+                <Button onClick={() => handleAddtoWAtchLater(data)}>Add to Favorite Movies</Button>
                </div>
         </div>
      }
